@@ -18,6 +18,7 @@ class Triangle
       :equilateral
     elsif
     
+    
   end
   
   def self.all
