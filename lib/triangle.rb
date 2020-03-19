@@ -14,10 +14,12 @@ class Triangle
   def kind
     if @length+@height < @width || @height+@width < @length || @width+@length < @height
       begin
-        
-    
-    if @length == @height && @height ==
-   #  returns, as a symbol, its type. The valid types are: :equilateral, :isosceles, :scalene
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
+    elsif (@length == @height && @height == @width)
+      :eq
   end
   
   def self.all
