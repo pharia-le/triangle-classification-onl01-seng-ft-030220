@@ -14,8 +14,7 @@ class Triangle
   def kind
     if @length+@height < @width || @height+@width < @length || @width+@length < @height || self.include?(0)
         raise TriangleError
-      rescue TriangleError => error
-          puts error.message
+    e;se
       end
     elsif (@length == @height && @height == @width)
       :equilateral
