@@ -1,12 +1,32 @@
 class Triangle
   
+  attr_accessor :length, :height, :width
   
-  def kind 
+  @@all = []
+  
+  def initialize(length, height, width)
+    @length = length
+    @height = height
+    @width = width
+    self.save
+  end
+  
+  def kind
+    if @length+@height < @width || @height+@width < @length || @width+@length < @height
+      begin
+        
+    
+    if @length == @height && @height ==
    #  returns, as a symbol, its type. The valid types are: :equilateral, :isosceles, :scalene
   end
   
+  def self.all
+    @@all
+  end
   
-  
+  def save
+    @@all << self
+  end
   
   class TriangleError < StandardError
     
