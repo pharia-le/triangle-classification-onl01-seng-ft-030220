@@ -19,9 +19,8 @@ class Triangle
     elsif self.uniq.size == 3
       :scalene
     else
-      :
-    
-    
+      :isosceles
+    end
   end
   
   def self.all
