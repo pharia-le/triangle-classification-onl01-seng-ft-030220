@@ -19,7 +19,9 @@ class Triangle
           puts error.message
       end
     elsif (@length == @height && @height == @width)
-      :eq
+      :equilateral
+    elsif
+    
   end
   
   def self.all
