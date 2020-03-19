@@ -16,7 +16,7 @@ class Triangle
         raise TriangleError
     elsif @length == @height && @height == @width
       :equilateral
-    elsif self.uniq.size == 3
+    elsif self.to_a.uniq.size == 3
       :scalene
     else
       :isosceles
