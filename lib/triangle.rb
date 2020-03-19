@@ -12,8 +12,7 @@ class Triangle
   end
   
   def kind
-    if @length+@height < @width || @height+@width < @length || @width+@length < @height
-      begin
+    if @length+@height < @width || @height+@width < @length || @width+@length < @height || self.include?(0)
         raise TriangleError
       rescue TriangleError => error
           puts error.message
@@ -33,7 +32,6 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    
   end
   
 end
