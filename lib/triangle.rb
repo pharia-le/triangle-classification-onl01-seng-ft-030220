@@ -16,7 +16,7 @@ class Triangle
         raise TriangleError
     elsif @length == @height && @height == @width
       :equilateral
-    elsif @length != @height && @height != @width
+    elsif @length != @height && @height != @width && @width != @length
       :scalene
     else
       :isosceles
